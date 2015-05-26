@@ -17,3 +17,39 @@ angular.module('starter', ['ionic'])
     }
   });
 })
+
+.controller('jokeCtrl', function($scope, $http, jokesBank){
+  //$scope.joke = {};
+
+  jokesBank.getRandom().then(function(j){
+    $scope.joke = j;
+  });
+
+  $scope.doRefresh = function(){
+    $http.get("http://api.icndb.com/jokes/random/").then(function(resp){
+      jokesBank.getRandom().then(function(j){
+        $scope.joke = j;
+      });
+    }).finally(function(){
+      $scope.$broadcast('scroll.refreshComplete');
+    });
+  };
+})
+
+.factory('jokesBank', function($http, $q){
+
+  var Joke = function(jid, jtext){
+    this.id = jid;
+    this.text = jtext;
+  };
+
+  return{
+    getRandom: function(){
+      //return new Joke(12, "Hello there!");
+      return $http.get("http://api.icndb.com/jokes/random/").then(function(resp){
+        var thejoke = new  Joke(resp.data.value.id, resp.data.value.joke);
+        return thejoke;
+      });
+    }
+  };
+});
