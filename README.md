@@ -52,6 +52,8 @@ o
 
 Que te diviertas!
 
+![Chuck Norris App screenshot](https://github.com/sergibyte/chucknorrisapp/blob/master/www/img/screenshot.jpeg)
+
 #The MIT License (MIT)
 
 Copyright (c) 2015 Sergibyte
