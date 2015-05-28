@@ -18,7 +18,7 @@ angular.module('starter', ['ionic'])
   });
 })
 
-.controller('jokeCtrl', function($scope, $http, jokesBank){
+.controller('jokeCtrl', function($scope, $http, jokesBank, $ionicModal){
   //$scope.joke = {};
 
   jokesBank.getRandom().then(function(j){
@@ -33,6 +33,24 @@ angular.module('starter', ['ionic'])
     }).finally(function(){
       $scope.$broadcast('scroll.refreshComplete');
     });
+  };
+
+  // Create the login modal that we will use later
+  $ionicModal.fromTemplateUrl('templates/credits.html', {
+    scope: $scope
+  }).then(function(modal) {
+    $scope.modal = modal;
+  });
+
+  // Triggered in the login modal to close it
+  $scope.closeCredits = function() {
+    $scope.modal.hide();
+  };
+
+  // Open the login modal
+  $scope.showCredits = function() {
+    console.log("Show Modal!");
+    $scope.modal.show();
   };
 })
 
