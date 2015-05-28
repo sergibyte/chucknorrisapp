@@ -4,11 +4,15 @@ Chuck Norris Jokes App is an app I built as a way of testing the  Ionic Framewor
 
 All the jokes are retrieved randomly from a DB provided by The Internet Chuck Norris database http://www.icndb.com.
 
+If you are an Ionic Framework user and want to see it on your _Ionic View_ app, let me know and I will share it with you.
+
 #App de chistes de Chuck Norris
 
 La App de chistes de Chuck Norris es una app construida para probar Ionic Framework. Sólo por diversión.
 
 Los chistes son recogidos aleatoriamente de una BD provista por The Internet Chuck Norris database http://www.icndb.com
+
+Si eres un usuario de Ionic Framework y te gustaría verla en la app _Ionic View_ házmelo saber y la compartiré contigo.
 
 #The MIT License (MIT)
 
