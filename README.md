@@ -6,6 +6,25 @@ All the jokes are retrieved randomly from a DB provided by The Internet Chuck No
 
 If you are an Ionic Framework user and want to see it on your _Ionic View_ app, let me know and I will share it with you.
 
+### Use
+
+To use the app, you'll need to have *Ionic Framework* installed. See http://www.ionicframeowrk.com for more info.
+
+Then you can see the app on you browser by running from the app folder:
+> ionic serve
+
+If you want to run it on the emulator, first add the platforms you want to build for with:
+> ionic platform add android
+or
+> ionic platform add ios
+
+To run it on your device/emulator just use:
+> ionic run android
+or
+> ionic run ios
+
+Have fun!
+
 #App de chistes de Chuck Norris
 
 La App de chistes de Chuck Norris es una app construida para probar Ionic Framework. Sólo por diversión.
@@ -13,6 +32,25 @@ La App de chistes de Chuck Norris es una app construida para probar Ionic Framew
 Los chistes son recogidos aleatoriamente de una BD provista por The Internet Chuck Norris database http://www.icndb.com
 
 Si eres un usuario de Ionic Framework y te gustaría verla en la app _Ionic View_ házmelo saber y la compartiré contigo.
+
+### Uso
+
+Para usar esta app, necesitará tener *Ionic Framework* instalado, visita http://www.ionicframework.com para más info.
+
+Entonces podrás abrir la aplicación en tu navegador usando:
+> ionic serve
+
+Para ejecutarla en un emulador/dispositivo, primero añade las plataformas con:
+> ionic platform add android
+o
+> ionic platform add ios
+
+Y para ejecutarla:
+> ionic run android
+o
+> ionic run ios
+
+Que te diviertas!
 
 #The MIT License (MIT)
 
